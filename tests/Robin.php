@@ -2,8 +2,6 @@
 
 use Robin\Robin;
 
-require_once '../Autoloader.php';
-
 // 简单轮询
 $services = [
     '192.168.10.1:2202',
