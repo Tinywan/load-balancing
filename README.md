@@ -65,3 +65,10 @@ var_export($nodes);
 }
 ```
 > 要使你发布的最新包可以使用，请使用以上的镜像源，为了学习
+
+### 参考
+
+*   [负载均衡算法 — 轮询](https://www.fanhaobai.com/2018/11/load-balance-round-robin.html)
+*   [负载均衡算法 — 平滑加权轮询](https://www.fanhaobai.com/2018/11/load-balance-smooth-weighted-round-robin.html)
+*   [Nginx的负载均衡 - 加权轮询 (Weighted Round Robin) 上篇](https://blog.csdn.net/zhangskd/article/details/50194069)
+*   [Nginx的负载均衡 - 加权轮询 (Weighted Round Robin) 下篇](https://blog.csdn.net/zhangskd/article/details/50197929)
