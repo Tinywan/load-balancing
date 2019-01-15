@@ -1,5 +1,3 @@
-# 负载均衡算法
-
 ## 介绍
 
 用 PHP 实现几种负载均衡调度算法，详细见 [负载均衡算法](https://www.fanhaobai.com/2018/11/load-balance-round-robin.html) 系列。
@@ -19,14 +17,14 @@ composer require tinywan/load-polling
 ## Basic Usage  
 
 ```PHP
-// 加权轮询
+// 服务器数
 $services = [
     '192.168.10.1:2202' => 5,
     '192.168.10.2:2202' => 1,
     '192.168.10.3:2202' => 1,
 ];
 
-// 使用平滑加权算法
+// 使用平滑加权算法 (Smooth Weighted Round Robin)
 $robin = new SmoothWeightedRobin();
 $robin->init($services);
 
@@ -40,7 +38,7 @@ var_export($nodes);
 
 ## 调度结果
 
-使用平滑加权算法调度，会生成如下均匀序列：
+使用平滑加权算法 (Smooth Weighted Round Robin)，会生成如下均匀序列：
 
 ```Bash
 '192.168.10.1:2202'
