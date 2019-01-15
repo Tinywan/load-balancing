@@ -2,13 +2,7 @@
 
 用 PHP 实现几种负载均衡调度算法，详细见 [负载均衡算法](https://www.fanhaobai.com/2018/11/load-balance-round-robin.html) 系列。
 
-![nginx](images/nginx.png)
-
-### 调度算法
-
-*   [普通轮询（general Round Robin）](https://github.com/Tinywan/load-polling/blob/master/src/Robin.php)
-*   [加权轮询（Weighted Round Robin）](https://github.com/Tinywan/load-polling/blob/master/src/WeightedRobin.php)
-*   [平滑加权轮询（Smooth Weighted Round Robin）](https://github.com/Tinywan/load-polling/blob/master/src/SmoothWeightedRobin.php)
+![nginx](images/ngxin-loading.jpg)
 
 ### Installation  
 
@@ -18,7 +12,7 @@ composer require tinywan/load-polling
 
 ### Basic Usage  
 
-```PHP
+```php
 // 服务器数
 $services = [
     '192.168.10.1' => 5,
@@ -50,10 +44,15 @@ array (
   4 => '192.168.10.1',
   5 => '192.168.10.3',
   6 => '192.168.10.1',
-  6 => '192.168.10.1',
   7 => '192.168.10.1',
 )
 ```
+
+### 调度算法
+
+*   [普通轮询（general Round Robin）](https://github.com/Tinywan/load-polling/blob/master/src/Robin.php)
+*   [加权轮询（Weighted Round Robin）](https://github.com/Tinywan/load-polling/blob/master/src/WeightedRobin.php)
+*   [平滑加权轮询（Smooth Weighted Round Robin）](https://github.com/Tinywan/load-polling/blob/master/src/SmoothWeightedRobin.php)
 
 ### Composer
 
@@ -76,3 +75,4 @@ array (
 *   [负载均衡算法 — 平滑加权轮询](https://www.fanhaobai.com/2018/11/load-balance-smooth-weighted-round-robin.html)  
 *   [Nginx的负载均衡 - 加权轮询 (Weighted Round Robin) 上篇](https://blog.csdn.net/zhangskd/article/details/50194069)  
 *   [Nginx的负载均衡 - 加权轮询 (Weighted Round Robin) 下篇](https://blog.csdn.net/zhangskd/article/details/50197929)  
+*   [Composer/Packagist包](https://www.chenjie.info/1880)  
