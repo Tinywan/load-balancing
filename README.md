@@ -55,3 +55,16 @@ var_export($nodes);
 '192.168.10.1:2202'
 '192.168.10.1:2202'
 ```
+
+## Composer
+
+安装错误`Could not find package tinywan/load-polling in a version matching 1.0`
+尝试改成Packagist的地址 https://packagist.org
+```composer log
+"repositories": {
+    "packagist": {
+        "type": "composer",
+        "url": "https://packagist.org"
+    }
+}
+```
