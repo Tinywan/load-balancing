@@ -4,23 +4,21 @@
 
 用 PHP 实现几种负载均衡调度算法，详细见 [负载均衡算法](https://www.fanhaobai.com/2018/11/load-balance-round-robin.html) 系列。
 
-![预览图](https://img1.fanhaobai.com/2018/11/load-balance-round-robin/1e858872-6235-4131-98ba-433690eb32c1.jpg)
-
+![预览图](images/nginx.png)
 ## 调度算法
-
-### 轮询
 
 * [普通轮询](https://github.com/fan-haobai/load-balance/blob/master/Robin/Robin.php)
 * [加权轮询](https://github.com/fan-haobai/load-balance/blob/master/Robin/WeightedRobin.php)
 * [平滑加权轮询](https://github.com/fan-haobai/load-balance/blob/master/Robin/SmoothWeightedRobin.php)
 
-## 快速使用
+## Installation  
+
+```composer log
+composer require tinywan/load-polling 
+```
+## Basic Usage  
 
 ```PHP
-use Robin\SmoothWeightedRobin;
-
-require_once '/Autoloader.php';
-
 // 加权轮询
 $services = [
     '192.168.10.1:2202' => 5,
@@ -37,8 +35,6 @@ for ($i = 1; $i <= 7; $i++) {
     $node = $robin->next();
     $nodes[$i] = $node;
 }
-
-//var_export(array_count_values($nodes));
 var_export($nodes);
 ```
 
@@ -58,7 +54,7 @@ var_export($nodes);
 
 ## Composer
 
-安装错误`Could not find package tinywan/load-polling in a version matching 1.0`
+安装提示错误：`Could not find package tinywan/load-polling in a version matching 1.0`
 尝试改成Packagist的地址 https://packagist.org
 ```composer log
 "repositories": {
@@ -68,3 +64,4 @@ var_export($nodes);
     }
 }
 ```
+> 要使你发布的最新包可以使用，请使用以上的镜像源，为了学习
