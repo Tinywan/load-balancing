@@ -20,7 +20,8 @@ $robin = new \Robin\SmoothWeightedRobin();
 $robin->init($services);
 
 $nodes = [];
-for ($i = 1; $i <= 7; $i++) {
+$sumWeight = $robin->getSumWeight();
+for ($i = 1; $i <= $sumWeight; $i++) {
     $node = $robin->next();
     $nodes[$i] = $node;
 }
