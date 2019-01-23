@@ -13,7 +13,7 @@
 ### Installation  
 
 ```composer log
-composer require tinywan/load-polling 
+composer require tinywan/load-balancing
 ```
 
 ### Basic Usage  

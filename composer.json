@@ -1,12 +1,12 @@
 {
-    "name": "tinywan/load-polling",
-    "description": "This nginx load polling for build composer packagist",
+    "name": "tinywan/load-balancing",
+    "description": "This nginx load balancing for build composer packagist",
     "type": "library",
     "license": "MIT",
     "homepage": "https://www.tinywan.com/",
     "support": {
-        "issues": "https://github.com/Tinywan/load-polling/issues",
-        "source": "https://github.com/Tinywan/load-polling"
+        "issues": "https://github.com/Tinywan/load-balancing/issues",
+        "source": "https://github.com/Tinywan/load-balancing"
     },
     "authors": [
         {
