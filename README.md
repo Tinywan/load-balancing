@@ -1,5 +1,3 @@
-![nginx](images/ngxin-loading.jpg)
-
 ### 介绍
 
 用 PHP 实现几种负载均衡调度算法，详细见 [负载均衡算法](https://www.fanhaobai.com/2018/11/load-balance-round-robin.html) 系列。[fork](https://github.com/fan-haobai/load-balance)
