@@ -1,4 +1,5 @@
 <?php
+
 /**.-------------------------------------------------------------------------------------------------------------------
  * |  Github: https://github.com/Tinywan
  * |  Blog: http://www.cnblogs.com/Tinywan
@@ -13,7 +14,7 @@ namespace Robin;
 
 class Robin implements RobinInterface
 {
-    private $services = array();
+    private $services = [];
 
     private $total;
 
@@ -32,5 +33,4 @@ class Robin implements RobinInterface
 
         return $this->services[$this->currentPos];
     }
-
 }
